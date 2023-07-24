@@ -8,22 +8,35 @@ C++ compiler with C++17 support (e.g., g++ or clang++)
 Unix-like operating system (Linux, macOS) or Windows (with some modifications for Windows compatibility)
 
 ### Build Instructions
-1.Clone the repository to your local machine:
+1. Clone the repository to your local machine:
 git clone https://github.com/your-username/simplewebserver.git
 cd simplewebserver
-2.Build the project using g++ or any other C++ compiler:
-g++ socket.cpp base64.cpp http.cpp webserver.cpp
+3. Build the project using g++ or any other C++ compiler:
+   ```bash
+   g++ socket.cpp base64.cpp http.cpp webserver.cpp
+5. ./a.out
+6. Open your web browser and type the following URL:
+   http://localhost:8080
+Alternatively, you can use the web client provided to send HTTP requests to the server:
+./a.out http://localhost:8080
 
-### Usage
-To use the web server, run the compiled executable:
-./a.out
-The server will start listening, and you can access it using a web browser or the web client. (Type in your browser - `http://localhost:8080`)
-Result would be
-![Screenshot](Capture.png)
+### Server Features
+- Listens on port 8080 for incoming HTTP requests.
+- Supports GET, HEAD, and POST methods.
+- Responds to requests with simple text content and an embedded image.
+- Handles 404 Not Found error when the requested image is not available.
 
-### Features
-Handles HTTP GET requests and responds with a simple HTML page or an image.
-Supports serving static files like images.
+### How It Works
+1. The server listens on port 8080 for incoming connections.
+2. When a client connects, the server reads the HTTP request sent by the client.
+3. The server parses the request and extracts the request method and headers.
+4. Based on the request method, the server generates an appropriate HTTP response.
+5. If the request method is GET or HEAD, the server responds with a simple HTML page containing a message and an embedded image.
+6. If the request method is POST, the server sends back the same message received in the request body.
+7. If the requested image is not available, the server responds with a 404 Not Found error.
+
+### Screenshot
+
 
 ### Troubleshooting
 If you encounter any issues while running the web server, make sure there are no other services running on the specified port.
