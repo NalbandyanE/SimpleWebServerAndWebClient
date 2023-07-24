@@ -14,10 +14,12 @@ cd simplewebserver
 3. Build the project using g++ or any other C++ compiler:
    ```bash
    g++ socket.cpp base64.cpp http.cpp webserver.cpp
-5. ./a.out
+5. ```bash
+   ./a.out
 6. Open your web browser and type the following URL:
    http://localhost:8080
 Alternatively, you can use the web client provided to send HTTP requests to the server:
+```bash
 ./a.out http://localhost:8080
 
 ### Server Features
@@ -43,8 +45,10 @@ If you encounter any issues while running the web server, make sure there are no
 
 ## Web Client
 ### Usage
-1. g++ socket.cpp http.cpp webclient.cpp
-2. ./a.out http://localhost:8080
+1. ```bash
+   g++ socket.cpp http.cpp webclient.cpp
+2. ```bash
+   ./a.out http://localhost:8080
 
 The client will attempt to connect to the web server and send an HTTP GET request. It will then display the server's response, including any HTML content or other data returned by the server.
 
