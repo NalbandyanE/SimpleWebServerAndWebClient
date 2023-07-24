@@ -11,7 +11,6 @@ Unix-like operating system (Linux, macOS) or Windows (with some modifications fo
 1. Clone the repository to your local machine:
    ```bash
    git clone [https://github.com/your-username/simplewebserver.git](https://github.com/NalbandyanE/SimpleWebServerAndWebClient.git)
-   ```bash
    cd simplewebserver
 3. Build the project using g++ or any other C++ compiler:
    ```bash
@@ -21,8 +20,8 @@ Unix-like operating system (Linux, macOS) or Windows (with some modifications fo
 6. Open your web browser and type the following URL:
    http://localhost:8080
 Alternatively, you can use the web client provided to send HTTP requests to the server:
-```bash
-./a.out http://localhost:8080
+   ```bash
+   ./a.out http://localhost:8080
 
 ### Server Features
 - Listens on port 8080 for incoming HTTP requests.
