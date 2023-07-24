@@ -9,8 +9,10 @@ Unix-like operating system (Linux, macOS) or Windows (with some modifications fo
 
 ### Build Instructions
 1. Clone the repository to your local machine:
-git clone https://github.com/your-username/simplewebserver.git
-cd simplewebserver
+   ```bash
+   git clone [https://github.com/your-username/simplewebserver.git](https://github.com/NalbandyanE/SimpleWebServerAndWebClient.git)
+   ```bash
+   cd simplewebserver
 3. Build the project using g++ or any other C++ compiler:
    ```bash
    g++ socket.cpp base64.cpp http.cpp webserver.cpp
