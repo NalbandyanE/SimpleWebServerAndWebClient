@@ -65,10 +65,10 @@ std::string HTTPresponse::getBody() const {
 }
 
 std::string HTTPresponse::toString() const {
-    std::string responseStr;
-    responseStr += "HTTP/1.1 " + std::to_string(statusCode) + " " + statusMessage + "\r\n";
-    responseStr += headers;
-    responseStr += "\r\n";
-    responseStr += body;
-    return responseStr;
+    	std::string responseStr;
+    	responseStr += "HTTP/1.1 " + std::to_string(statusCode) + " " + statusMessage + "\r\n";
+    	responseStr += headers;
+    	responseStr += "\r\n";
+    	responseStr += body;
+    	return responseStr;
 }
