@@ -19,7 +19,7 @@ To use the web server, run the compiled executable:
 ./a.out
 The server will start listening, and you can access it using a web browser or the web client. (Type in your browser - `http://localhost:8080`)
 Result would be
-![Alt Text](Capture.png)
+![Screenshot](Capture.png)
 
 ### Features
 Handles HTTP GET requests and responds with a simple HTML page or an image.
