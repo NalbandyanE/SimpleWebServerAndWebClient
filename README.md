@@ -10,8 +10,8 @@ Unix-like operating system (Linux, macOS) or Windows (with some modifications fo
 ### Build Instructions
 1. Clone the repository to your local machine:
    ```bash
-   git clone [https://github.com/your-username/simplewebserver.git](https://github.com/NalbandyanE/SimpleWebServerAndWebClient.git)
-   cd simplewebserver
+   git clone https://github.com/NalbandyanE/SimpleWebServerAndWebClient.git
+   cd simplewebserverandwebclient
 3. Build the project using g++ or any other C++ compiler:
    ```bash
    g++ socket.cpp base64.cpp http.cpp webserver.cpp
@@ -25,7 +25,7 @@ Alternatively, you can use the web client provided to send HTTP requests to the 
 
 ### Server Features
 - Listens on port 8080 for incoming HTTP requests.
-- Supports GET, HEAD, and POST methods.
+- Supports GET method.
 - Responds to requests with simple text content and an embedded image.
 - Handles 404 Not Found error when the requested image is not available.
 
