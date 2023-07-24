@@ -39,7 +39,7 @@ Alternatively, you can use the web client provided to send HTTP requests to the 
 7. If the requested image is not available, the server responds with a 404 Not Found error.
 
 ### Screenshot
-![SCREENSHOT](Capture.png)
+![SCREENSHOT](Capture.PNG)
 
 ### Troubleshooting
 If you encounter any issues while running the web server, make sure there are no other services running on the specified port.
