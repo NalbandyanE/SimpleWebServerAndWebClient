@@ -1,4 +1,4 @@
-"# SimpleWebServerAndWebClient" 
+# SimpleWebServerAndWebClient
 
 This is a simple command-line web server and web client written in C++. The web server can handle HTTP GET requests and respond with a simple HTML page with image, while the web client can send HTTP GET requests to the server and display the server's response.
 
